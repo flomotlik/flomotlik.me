@@ -1,0 +1,9 @@
+domain = 'flomotlik.me'
+
+hostedZone = resource(route53.HostedZone(name(domain), Name=domain))
+
+module('web_bucket', domain=domain)
+
+module('dns', 's3_bucket_a_record', source=domain, hostedZone= hostedZone)
+
+module('dns', 'google_mx_records', source=domain, hostedZone=hostedZone)

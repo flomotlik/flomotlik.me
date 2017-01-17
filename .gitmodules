@@ -1,3 +1,6 @@
 [submodule "themes/cocoa-hugo-theme"]
 	path = themes/cocoa-hugo-theme
 	url = git@github.com:nishanths/cocoa-hugo-theme.git
+[submodule "modules/formica"]
+	path = modules/formica
+	url = git@github.com:cloudthropology/formica-modules.git
