@@ -1,6 +1,6 @@
 baseurl             = "http://flomotlik.me/"
 builddrafts         = false
-theme               = "cocoa-hugo-theme"
+theme               = "cocoa"
 canonifyurls        = true
 contentdir          = "content"
 languageCode        = "en-US"
