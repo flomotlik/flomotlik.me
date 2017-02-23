@@ -29,7 +29,7 @@ highlightjs  = true
 lang         = "en"
 linkedin     = "//linkedin.com/in/florianmotlik"
 twitter      = "//twitter.com/flomotlik"
-selfIntro    = "Making tools so you can ignore Servers. Ping me about your infrastructure questions and ideas"
+selfIntro    = "Making tools for developers"
 
 gravatar             = "442aa42b5c2cd9793792b48fa1b5d9c2"                # do not use in the same time as avatar
 # highlightjslanguages = ["go"]            # additional languages not included in the "common" set
