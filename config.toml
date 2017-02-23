@@ -10,7 +10,7 @@ author              = "Florian Motlik"
 title               = "Florian Motlik personal page"
 pygmentsuseclasses  = true
 pluralizelisttitles = false
-# googleAnalytics     = "UA-123-45"
+googleAnalytics     = "UA-52384561-1"
 
 [permalinks]
 fixed = ":title/"
