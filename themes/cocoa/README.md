@@ -1,93 +1,72 @@
-# Cocoa
+# Cocoa Enhanced
 
-A consistent and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with clean typography. The primary typefaces are Open Sans, Raleway, and Ubuntu Mono.
+[![MIT License](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000?style=plastic)](https://github.com/fuegowolf/cocoa-eh-hugo-theme/blob/master/LICENSE)
 
-[__Demo__](http://themes.gohugo.io/theme/cocoa/)
+**Cocoa Enhanced** is a clean and responsive [Hugo](http://gohugo.io) [theme](https://github.com/spf13/hugoThemes/) with cool typograhy. The main goal of this theme is to be simple but highly customizable.
 
-#### Features
+You can use this theme either for your blog or your personnal website. A demo is available [here](https://kodewolf.com).
 
-```
-* Responsive
-* Suited for blogging and personal webpages
-* Disqus support
-* Built-in 404 page
-* Syntax highlighting (by @andy4thehuynh)
-* Gravatar/static profile image (by @remeh)
-* RSS feed and icon (by @mvrilo)
-* Optimized SVG icons (by @robinst)
-* Cache busting
-* Google Analytics
-```
+> This is a fork from the original [Cocoa](https://www.github.com/nishanths/cocoa-hugo-theme) theme, with some improvements.
 
-Most features are optional and can be individually enabled/disabled in your [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml).
-
-## Screenshots
-
-<img src="https://raw.githubusercontent.com/nishanths/cocoa-hugo-theme/master/images/tn.png" width="800">
-
-<img src="http://i.imgur.com/jdstF9j.png" width="800">
-
-<img src="https://i.imgur.com/5jI8kEU.png" width="400">
-
+[![screenshot](https://raw.githubusercontent.com/fuegowolf/cocoa-eh-hugo-theme/master/images/screenshot.png)](https://raw.githubusercontent.com/fuegowolf/cocoa-eh-hugo-theme/master/images/screenshot.png)
 
 ## Table of Contents
 
-* [Quick start](#quick-start)
-* [Usage](#usage)
-* [Development](#development)
-* [Changelog](#changelog)
+* [Features](#features)
+* [Getting Started](#getting-started)
+* [Contributing](#contributing)
 * [License](#license)
 
-## Quick start 
+## Features
 
-From the root of your Hugo site, clone the theme into `themes/cocoa` by running:
+* Suited for blogging and personal webpages.
+* Possibility to have sections with a header and a list of articles.
+* Possibility to have single pages.
+* Homepage with latest and best posts
+* Syntax highlighting with hightlightjs.
+* Progressive images.
+* Twitter cards support.
+* Disqus support.
+* Responsive and **blazing fast**.
 
-```sh
-# Clone theme into the themes/cocoa directory
-$ git clone https://github.com/nishanths/cocoa-hugo-theme.git themes/cocoa
+#### Differences from the original Cocoa
 
-# Generate site files into the public directory
-$ hugo -t cocoa
+This theme is less minimalist than the original Cocoa, with some new features :
 
-# Or, serve your site and visit localhost:1313 in your browser
-$ hugo -t cocoa --watch serve
-```
+* Displays a logo on the side of the header, and there is a title different from the author name.
+* Very modulable with sections and single pages.
+* Group articles by month and year.
+* Progressive images.
+* Fonts are different : stronger and sharper, with a clear identity.
+* The font size in articles is higher, the text justified and lines are more spaced.
+* More features.
 
-## Usage
+## Getting Started 
 
-#### config.toml
-
-Please see the sample [`config.toml`](https://github.com/nishanths/cocoa-hugo-theme/blob/master/exampleSite/config.toml). Note that if you already use cocoa but have updated to Hugo 0.18, you must lowercase every params of your existing `config.toml` (like in the sample).
-
-#### Creating posts
-
-Posts should generally go under a `content/blog` directory. Typically you would run:
-
-````
-hugo new blog/your-new-post.md
-````
-For posts to appear on your site, you may need `draft = false` in the post's front matter or use the `--buildDrafts` option when building.
-
-#### Creating fixed pages
-
-Fixed pages such as an About page should preferably go under `content/fixed` or be present at the root of the `content` directory.
+From the root of your Hugo site, clone the theme into `themes/cocoa-eh` by running:
 
 ````
-hugo new fixed/about.md
+git clone https://github.com/fuegowolf/cocoa-eh-hugo-theme.git themes/cocoa-eh
 ````
 
-## Development
+Then, generate your site's files by running:
 
-This theme is built and improved upon by open source [contributions](https://github.com/nishanths/cocoa-hugo-theme/graphs/contributors). Pull requests, bug fixes, and new features are welcome! 
+````
+hugo -t cocoa-eh
+````
 
-If you're contributing CSS changes, please see the README at [`dev/`](dev).
+If you want a simple blog you can just use the `exampleSite`, however if you desire a more complex website you can build it with the [wiki](https://github.com/fuegowolf/cocoa-eh-hugo-theme/wiki).
 
+## Contributing
 
-## Changelog
+Pull requests, bug fixes, and new features are welcome!
 
-See [Changelog](https://github.com/nishanths/cocoa-hugo-theme/wiki/Changelog) in the wiki.
-
+1. Fork the repository
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request on GitHub
 
 ## License
 
-Licensed under the MIT License. See the [LICENSE](https://github.com/nishanths/cocoa-hugo-theme/blob/master/LICENSE) file for more details.
+Licensed under the MIT License. See the [LICENSE](https://github.com/fuegowolf/cocoa-eh-hugo-theme/blob/master/LICENSE.md) file for more details.

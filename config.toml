@@ -1,37 +1,32 @@
 baseurl             = "http://flomotlik.me/"
-builddrafts         = false
 theme               = "cocoa"
+builddrafts         = false
 canonifyurls        = true
 contentdir          = "content"
 languageCode        = "en-US"
 layoutdir           = "layouts"
 publishdir          = "public"
 author              = "Florian Motlik"
-title               = "Florian Motlik personal page"
-pygmentsuseclasses  = true
+title               = "Florian Motlik"
 pluralizelisttitles = false
 googleAnalytics     = "UA-52384561-1"
 
 [permalinks]
-fixed = ":title/"
 blog  = "blog/:slug/"
 
 [params]
-author       = "Florian Motlik"
-cachebuster  = true # add the current unix timestamp in query string for cache busting css assets
 dateform     = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 description  = "Personal Homepage"
-email        = "flomotlik@gmail.com"
-faviconfile  = ""
-github       = "//github.com/flomotlik"
+logofile = "img/logo.png"
+faviconfile  = "img/favicon.ico"
 highlightjs  = true
+progressively = false
+latestpostcount = 5
 lang         = "en"
-linkedin     = "//linkedin.com/in/florianmotlik"
-twitter      = "//twitter.com/flomotlik"
-selfIntro    = "Making tools for developers"
+github       = "flomotlik"
+email        = "flo@flomotlik.me"
+linkedin     = "florianmotlik"
+twitter      = "flomotlik"
+# social_banner = "img/banner.png"
 
-gravatar             = "442aa42b5c2cd9793792b48fa1b5d9c2"                # do not use in the same time as avatar
-# highlightjslanguages = ["go"]            # additional languages not included in the "common" set
-
-# extracssfiles = [ "/css/override.css" ] # In your `static` directory, add/remove files as necessary.
