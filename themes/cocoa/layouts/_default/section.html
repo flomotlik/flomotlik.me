@@ -11,7 +11,6 @@
             </div>
             <div class="posts">
             {{ if ne (len (where .Data.Pages "Params.Index" "!=" true)) 0}}
-                <div class="page-heading">{{ replace .Title "-" " " }}</div>
                 <ul>
                     {{ range .Data.Pages.ByPublishDate }}
                         {{ if ne .Params.Index true }}
