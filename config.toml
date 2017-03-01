@@ -28,5 +28,4 @@ github       = "flomotlik"
 email        = "flo@flomotlik.me"
 linkedin     = "florianmotlik"
 twitter      = "flomotlik"
-# social_banner = "img/banner.png"
-
+social_banner = "img/headshot.jpg"
