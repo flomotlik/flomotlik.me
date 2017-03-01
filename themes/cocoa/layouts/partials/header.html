@@ -6,9 +6,9 @@
 <body lang="{{ .Site.Params.lang }}">
 
 {{ if .IsPage }}
-<section class="header"> 
+<section class="header">
 {{ else }}
-<section class="header header-home"> 
+<section class="header header-home">
 {{ end }}
     <div class="container">
         <a href="{{ .Site.BaseURL }}"><img class="logo" src="https://gravatar.com/avatar/{{ md5 .Site.Params.email }}?s=150" /></a>
@@ -22,7 +22,7 @@
                     {{ range .Site.Sections }}
                         {{ range first 1 (where .Pages "Section" "ne" "")}}
                             {{ if ne .Section "blog"}}
-                            <a href="{{ .Section | urlize }}"><li>{{ .Section }}</li></a>
+                            <a href="{{ .Section | urlize }}"><li>{{ replace .Section "-" " " }}</li></a>
                             {{ end }}
                         {{ end }}
                     {{ end }}
