@@ -54,7 +54,7 @@ There has been quite a bit of talk around cross provider compatibility for tooli
 
 The strength of Serverless infrastructure is to put everything that is not your core product code into services and have those services work together through some glue where you only worry about your code and no infrastructure. The scope of services each provider has are very different, so trying to build an infrastructure that can be moved as one to another provider is not really feasible any more. It was when the cloud was mostly server instances, but that time is in the past.
 
-Now of course that doesn't mean that you shouldn't worry about lock-in, just that you have to think about it differently. Its unlikely you're going to move from one provider to another completely, as there is too much surface area that is covered by the specific services one provider has. And costs aren't the necessary differentiator anymore as they were in the past, because factoring in additional necessary man-power and speed of innovation make simple cost comparisons meaningless. We have to build infrastructure in a way where its possible to include best of breed services from another provider, but at the same time still get the most out of the existing services we already use without having to fall back to DIY. 
+Now of course that doesn't mean that you shouldn't worry about lock-in, just that you have to think about it differently. Its unlikely you're going to move from one provider to another completely, as there is too much surface area that is covered by the specific services one provider has. And costs aren't the necessary differentiator anymore as they were in the past, because factoring in additional necessary man-power and speed of innovation make simple cost comparisons meaningless. We have to build infrastructure in a way where its possible to include best of breed services from another provider, but at the same time still get the most out of the existing services we already use without having to fall back to DIY.
 
 ## Conclusions
 
@@ -65,6 +65,7 @@ To really make the most out of this we have to start breaking with a few old hab
 I will go into more detail on several of the afforementioned topics in future blogposts, so follow me on [twitter](https://twitter.com/flomotlik) or get the [feed from this blog](http://flomotlik.me/index.xml) to see those follow ups as well.
 
 Thanks to the following people for review and feedback
+
 * [Paul Johnston](https://twitter.com/pauldjohnston)
 * [Maciej Winnicki](https://twitter.com/mthenw)
 * [Mike Roberts](https://twitter.com/mikebroberts)
