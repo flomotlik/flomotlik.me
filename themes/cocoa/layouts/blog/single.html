@@ -10,6 +10,17 @@
                 <div class="meta">
                     <div class="date" title="{{ .Date.Format .Site.Params.dateformfull }}">{{ .Date.Format .Site.Params.dateform }}</div>
                     <div class="reading-time"><div class="middot"></div>{{ if eq 1 .ReadingTime }}{{ .ReadingTime }} minute read{{ else }}{{ .ReadingTime }} minutes read{{ end }}</div>
+                    <div class="social-media-share">
+                      <div class="twitter-share">
+                        <a class="twitter-share-button"
+                          href="https://twitter.com/intent/tweet?via=flomotlik&text={{ .Title | truncate 50 " ..." }}&url={{ .Permalink }}">
+                          Tweet
+                        </a>
+                      </div>
+                      <div class="facebook-share">
+                        <div class="fb-share-button" data-href="{{ .Permalink }}" data-layout="button_count" style="height:20px; vertical-align: top;"></div>
+                      </div>
+                    </div>
                 </div>
             </div>
             <div class="markdown">
