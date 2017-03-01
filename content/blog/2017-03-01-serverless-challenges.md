@@ -1,6 +1,6 @@
 +++
 title = "Challenges of Serverless in 2017"
-date = "2017-02-27"
+date = "2017-03-01"
 draft = "false"
 +++
 
@@ -62,15 +62,14 @@ The ideas behind Serverless aren't new. Its a continuation of practices and para
 
 To really make the most out of this we have to start breaking with a few old habits, especially around tooling and documentation. The one tool fits all infrastructure and deployment category is going to hurt us more than it will help in the future. Instead we should, through a mix of education, documentation and better low level tooling, provide a better onboarding and deployment experience. This will make evolving our infrastructure with every new service that comes out a lot simpler.
 
-I will go into more detail on several of the afforementioned topics in future blogposts, so follow me on [twitter](https://twitter.com/flomotlik) or get the feed from this blog to see those follow ups as well.
+I will go into more detail on several of the afforementioned topics in future blogposts, so follow me on [twitter](https://twitter.com/flomotlik) or get the [feed from this blog](http://flomotlik.me/index.xml) to see those follow ups as well.
 
 Thanks to the following people for review and feedback
 * [Paul Johnston](https://twitter.com/pauldjohnston)
-* [Maciej Winnicki]
-* [Mike Roberts]
-* [Ryan Scott Brown]
-* [John McKim]
-* [John Chapin]
+* [Maciej Winnicki](https://twitter.com/mthenw)
+* [Mike Roberts](https://twitter.com/mikebroberts)
+* [Ryan Scott Brown](https://twitter.com/ryan_sb)
+* [John Chapin](https://twitter.com/johnchapin)
 
 ## Also Check out
 
