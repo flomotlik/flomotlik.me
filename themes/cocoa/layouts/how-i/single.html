@@ -8,8 +8,7 @@
                     {{ partial "page-heading" . }}
                 </div>
                 <div class="meta">
-                    <div class="date" title="{{ .Date.Format .Site.Params.dateformfull }}">{{ .Date.Format .Site.Params.dateform }}</div>
-                    <div class="reading-time"><div class="middot"></div>{{ if eq 1 .ReadingTime }}{{ .ReadingTime }} minute read{{ else }}{{ .ReadingTime }} minutes read{{ end }}</div>
+                    <div class="reading-time">{{ if eq 1 .ReadingTime }}{{ .ReadingTime }} minute read{{ else }}{{ .ReadingTime }} minutes read{{ end }}</div>
                     <div class="social-media-share">
                       <div class="twitter-share">
                         <a class="twitter-share-button"

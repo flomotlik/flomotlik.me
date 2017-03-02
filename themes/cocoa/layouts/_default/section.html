@@ -2,21 +2,21 @@
 <section class="main">
     <div class="container">
         <div class="content">
-            {{ $globalTitle := .Title}}
             <div class="markdown">
                 {{ range .Data.Pages }}
-                    {{ if eq .Title $globalTitle }}
+                    {{ if eq .Params.Index true }}
                         {{ .Content }}
                     {{ end }}
                 {{ end }}
             </div>
             <div class="posts">
-            {{ if ne (len (where .Data.Pages "Title" "!=" $globalTitle)) 0}}
-                <div class="page-heading">{{ .Title }}</div>
+            {{ if ne (len (where .Data.Pages "Params.Index" "!=" true)) 0}}
                 <ul>
                     {{ range .Data.Pages.ByPublishDate }}
-                        {{ if ne .Title $globalTitle }}
-                            {{ partial "li.html" . }}
+                        {{ if ne .Params.Index true }}
+                          <li class="post-item">
+                              <a href="{{ .Permalink }}"><span>{{ .Title }}</span></a>
+                          </li>
                         {{ end }}
                     {{ end }}
                 </ul>
