@@ -1,0 +1,42 @@
+.heading(@font-size: 18px) {
+    font-size: @font-size;
+    font-family: @heading-font-stack;
+    letter-spacing: -0.005rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    color: @black;
+}
+
+.heading2(@font-size: 28px) {
+    padding-top: 20px;
+    font-size: @font-size;
+    font-family: @special-font-stack-1;
+    letter-spacing: -0.005rem;
+    text-transform: uppercase;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    color: @black;
+}
+
+.transition (@transition) {
+    -webkit-transition: @transition;
+    -moz-transition:    @transition;
+    -ms-transition:     @transition;
+    -o-transition:      @transition;
+}
+
+.user-select(@user-select) {
+    -webkit-user-select: @user-select;
+    -moz-user-select: @user-select;
+    -ms-user-select: @user-select;
+    user-select: @user-select;
+}
+
+.meta() {
+    font-size: 14px;
+    color: @gray;
+}

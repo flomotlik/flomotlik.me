@@ -2,6 +2,8 @@
 
 set -e
 
+make -C css clean css
+
 rm -fr public
 
 hugo

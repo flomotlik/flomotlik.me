@@ -5,6 +5,7 @@
             <div class="markdown">
                 {{ range .Data.Pages }}
                     {{ if eq .Params.Index true }}
+                        <h2>{{ .Title }}</h2>
                         {{ .Content }}
                     {{ end }}
                 {{ end }}

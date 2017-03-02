@@ -25,11 +25,7 @@
             </div>
             <div class="markdown">
                 {{ .Content }}
-                <p><a href="{{ .Section }}">Back to posts</a></p>
-            </div>
-            <br>
-            <div class="disqus">
-                {{ template "_internal/disqus.html" . }}
+                <p><a href="{{ .Section | absURL }}">Back to posts</a></p>
             </div>
         </div>
     </div>

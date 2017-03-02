@@ -1,5 +1,5 @@
 baseurl             = "http://flomotlik.me/"
-theme               = "cocoa"
+theme               = ""
 builddrafts         = false
 canonifyurls        = true
 contentdir          = "content"
@@ -20,7 +20,7 @@ dateformfull = "Mon Jan 2 2006 15:04:05 MST"
 description  = "Personal Homepage"
 logofile = "img/logo.png"
 faviconfile  = "img/favicon.ico"
-highlightjs  = true
+highlightjs  = false
 progressively = false
 latestpostcount = 5
 lang         = "en"
