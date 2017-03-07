@@ -24,13 +24,13 @@ With that said, there are basically 4 different scenarios for me:
 
 I use Omnifocus on my Mac and IPhone to organise all incoming tasks and group them. They follow the [Getting things done](http://gettingthingsdone.com) way to manage your tasks effectively. Their quick-add feature is super helpful while working on my mac or when I'm out with my phone so I can always take quick tasks and never have to remember anything:
 
-![Omnifocus Quick Add](/img/how-i-do/task-management/omnifocus-quick-add.png)
+![Omnifocus Quick Add](/img/how-i/task-management/omnifocus-quick-add.png)
 
 Their grouping feature makes it trivial to organise work in diffeent projects and use contexts as a second way to group tasks. E.g. you might have different work projects, but by giving them the context work you can individually select them depending on the project or context. Kind of like labels.
 
 Omnifocus has great usability and I can very quickly add tasks as well as take a look at what has to be done today or in general. I can get a quick view on my phone to see what needs to be done today:
 
-![IPhone Overview](/img/how-i-do/task-management/iphone-overview.png)
+![IPhone Overview](/img/how-i/task-management/iphone-overview.png)
 
 It also forces you into a regular feedback cycle where you look through all of your projects to clean them up.
 
@@ -68,13 +68,13 @@ I love jumping straight into work. Just getting stuff done and shipping things i
 
 Planning my goals for the week and doing a daily standup has become a very core and important part of my process. Every Monday I sit down for a few minutes, review all Omnifocus projects, review any email tasks that are still open, check what I didn't get done last week and think about what else I want to get done. Then this all is put into a post in Slack (a slack where I'm the only person) and isn't changed after that.
 
-![Weekly planning](/img/how-i-do/task-management/weekly-planning.png)
+![Weekly planning](/img/how-i/task-management/weekly-planning.png)
 
 The idea is to keep myself focused and accountable. If at the end of the week I didn't get all or most of the things done it can mean that other things became more important or I wasn't as focused as I should be. This makes it possible to review my week and learn for the future.
 
 Every day I take a few minutes in the morning to think about my day and do a similar post.
 
-![Daily planning](/img/how-i-do/task-management/daily-planning.png)
+![Daily planning](/img/how-i/task-management/daily-planning.png)
 
 During the day, sometimes at the end of the day, sometimes the next day, I check off those tasks. Again this allows me to review what I got done and keeps me focused. And whenever I ship a task I can look up what the next thing that I want to work on is.
 
