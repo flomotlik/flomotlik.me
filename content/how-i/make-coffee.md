@@ -19,9 +19,9 @@ title = "How I make coffee"
 
 Coffee is life, coffee is warmth, coffee is a beautiful morning. As parents of a 5 month old (as of March 2017) coffee is what separates sleeping from waking hours.
 
-Up until about a year ago I drank coffee, but wasn't really interested in the taste of it. But since then, especially since working from home, I started to get a little more interested. My brother-in-law definitely had a strong influence as he is very much into coffee. I'm not super into coffee compared to the super fans, but when I drink coffee I want to have something that actually tastes well, not just a transport fluid for caffeeine so I'm awake.
+Up until about a year ago I drank coffee, but wasn't really interested in the taste of it. But since then, especially since working from home, I started to get a little more interested. My brother-in-law definitely had a strong influence as he is very much into coffee. I'm not super into coffee compared to the super fans, but when I drink coffee I want to have something that actually tastes well, not just a transport fluid for caffeine so I'm awake.
 
-We've had a Nespresso machine at home for a bit, but it tastes shitty and is pretty bad for the environment. Its also super expensive so I wanted to have good coffee without having to spend a large amount of money on bad coffee and a coffee machine I have to worry about. So here is how I enjoy coffee.
+We've had a Nespresso machine at home for a bit, but it tastes shitty and is pretty bad for the environment. It's also super expensive so I wanted to have good coffee without having to spend a large amount of money on bad coffee and a coffee machine I have to worry about. So here is how I enjoy coffee.
 
 ## Get good coffee
 
@@ -29,7 +29,7 @@ You need great beans for great coffee. Buy whole beans and grind them at home. M
 
 ![Image of Alt Wien Kaffee](/img/how-i/make-coffee/alt-wien-kaffee.jpg)
 
-We're using beans from [Alt Wien Kaffee](https://www.altwien.at), but you should be able to get decent beans almost anywhere. There are tons of small roast shops in many places. Invest a bit, it makes a huge difference and isn't that much more expensive than cheap beans you buy in the supermarket. 
+We're using beans from [Alt Wien Kaffee](https://www.altwien.at), but you should be able to get decent beans almost anywhere. There are tons of small roast shops in many places. Invest a bit, it makes a huge difference and isn't that much more expensive than cheap beans you buy in the supermarket.
 
 Get a few different ones in the beginning and use one pack after the other to experiment with what you enjoy. After trying 5-6 different packs we settled on one and have been pretty much only drinking that one (Hermes Kaffee from Alt Wien). We're trying new ones sometimes to experiment, but not too often. But keep experimenting so you find the one that you really enjoy.
 
@@ -55,9 +55,9 @@ Now lets take a detailed look at all the steps I'm doing for my coffee. While th
 
 ### Coffee grinding
 
-I try to always grind exactly the amount of coffee that I need for one brewing. Otherwise the already grinded coffee would lose its flavour, which would be a shame. To make sure I get the right amount every time I recently started weighing the amount I use before putting it into the grinder and experimenting with how much coffee tastes best to me.
+I try to always grind exactly the amount of coffee that I need for one brewing. Otherwise the already ground coffee would lose its flavors, which would be a shame. To make sure I get the right amount every time I recently started weighing the amount I use before putting it into the grinder and experimenting with how much coffee tastes best to me.
 
-Put it through the grinder and out comes the perfectly grinded coffee. For a Bialetti use a more coarse grinding option, but experiment until you find the one you like the most. When switching coffee you might have to trial a bit to find the perfect setting again.
+Put it through the grinder and out comes the perfectly ground coffee. For a Bialetti use a more coarse grinding option, but experiment until you find the one you like the most. When switching coffee you might have to trial a bit to find the perfect setting again.
 
 ![Fill the Bialetti](/img/how-i/make-coffee/grinded-coffee.jpg)
 
@@ -67,7 +67,7 @@ Now fill up the coffee holder of the Bialetti to the edge. Make sure there is no
 
 ![Put together Bialetti](/img/how-i/make-coffee/on-stove.jpg)
 
-Pour the water into the Bialetti up to the inside vent and make sure the water ends before the vent. Then put everything together and set the stove to medium heat. 
+Pour the water into the Bialetti up to the inside vent and make sure the water ends before the vent. Then put everything together and set the stove to medium heat.
 
 ### Making Coffee
 
@@ -75,7 +75,7 @@ After a few minutes the coffee will start extracting and fill the Bialetti.
 
 ![Coffee extraction](/img/how-i/make-coffee/extraction.jpg)
 
-When most of the Bialetti has filled, but the coffee is still flowing take it off the stove and put it into the water bowl you set aside in the beginning. This will make sure that the brewing process stops. If you don't do this your coffee might get a little bitter as the last remnants of coffee are still pushed through. 
+When most of the Bialetti has filled, but the coffee is still flowing take it off the stove and put it into the water bowl you set aside in the beginning. This will make sure that the brewing process stops. If you don't do this your coffee might get a little bitter as the last remnants of coffee are still pushed through.
 
 ![Coffee in Water Bowl](/img/how-i/make-coffee/in-water.jpg)
 
