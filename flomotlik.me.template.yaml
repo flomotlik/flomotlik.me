@@ -1,0 +1,27 @@
+{% set domain = 'flomotlik.me' %}
+{% set modules = 'modules/formica/' %}
+
+Modules:
+  - path: {{modules}}dns
+    template: hosted_zone
+    vars:
+      name: {{ domain }}
+  - path: {{modules}}web_bucket
+    vars:
+      domain: {{ domain }}
+  - path: {{modules}}dns
+    template: s3_bucket_a_record
+    vars:
+      hostedZone: {{ domain }}
+      source: {{ domain }}
+  - path: {{modules}}dns
+    template: google_mx_records
+    vars:
+      source: {{ domain }}
+      hostedZone: {{ domain }}
+  - path: {{modules}}dns
+    template: txt
+    vars:
+      source: {{ domain }}
+      hostedZone: {{ domain }}
+      targets: {{ ['google-site-verification=FUiaYFFdYrCtrcLB8viZUwT7Q2RjQAqksNJGw4WxWko'] }}
