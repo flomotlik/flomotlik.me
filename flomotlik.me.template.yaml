@@ -25,3 +25,10 @@ Modules:
       source: {{ domain }}
       hostedZone: {{ domain }}
       targets: {{ ['google-site-verification=FUiaYFFdYrCtrcLB8viZUwT7Q2RjQAqksNJGw4WxWko'] }}
+  - path: {{modules}}dns
+    template: redirect
+    vars:
+      source: theserverlessway.com
+      hostedZone: {{ domain }}
+      redirect_host: {{ domain }}
+      protocol: https
