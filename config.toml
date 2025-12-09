@@ -1,15 +1,24 @@
-baseurl             = "http://flomotlik.me/"
-theme               = ""
-builddrafts         = false
-canonifyurls        = true
-contentdir          = "content"
+baseURL             = "https://flomotlik.me/"
+buildDrafts         = false
+canonifyURLs        = false
+contentDir          = "content"
 languageCode        = "en-US"
-layoutdir           = "layouts"
-publishdir          = "public"
+layoutDir           = "layouts"
+publishDir          = "public"
 author              = "Florian Motlik"
-title               = "Florian Motlik"
-pluralizelisttitles = false
-googleAnalytics     = "UA-52384561-1"
+title               = "Florian Motlik - AWS Consultant"
+pluralizeListTitles = false
+
+# Modern Hugo requires explicit markup configuration
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    style = "monokai"
 
 [permalinks]
 blog  = "blog/:slug/"
@@ -17,8 +26,9 @@ blog  = "blog/:slug/"
 [params]
 dateform     = "Jan 2, 2006"
 dateformfull = "Mon Jan 2 2006 15:04:05 MST"
-description  = "Personal Homepage"
-logofile = "img/logo.png"
+description  = "Independent AWS consultant with 15+ years of experience helping teams build scalable, secure cloud infrastructure."
+tagline      = "AWS Infrastructure Expert"
+logofile     = "img/logo.png"
 faviconfile  = "img/favicon.ico"
 highlightjs  = false
 progressively = false
@@ -27,5 +37,16 @@ lang         = "en"
 github       = "flomotlik"
 email        = "flo@flomotlik.me"
 linkedin     = "florianmotlik"
-twitter      = "flomotlik"
 social_banner = "img/headshot.jpg"
+
+# Podcast URLs
+podcast_spotify = "https://open.spotify.com/show/7rj9KZWKljrAheNNiNk83j"
+podcast_apple   = "https://podcasts.apple.com/at/podcast/aws-news-weekly/id1775481091"
+podcast_episodes = "28+"
+
+# Experience
+years_experience = "15+"
+
+[outputs]
+home = ["HTML", "RSS"]
+section = ["HTML", "RSS"]

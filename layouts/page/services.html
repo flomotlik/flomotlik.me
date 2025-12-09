@@ -1,0 +1,41 @@
+{{ partial "header.html" . }}
+
+<section class="main">
+    <div class="container">
+        <div class="content services-page">
+            <div class="page-heading">{{ .Title }}</div>
+
+            <div class="markdown">
+                {{ .Content }}
+            </div>
+
+            {{ range .Site.Data.services }}
+            <div class="service-detail" id="{{ .id }}">
+                <div class="service-icon">
+                    <i class="icon {{ .icon }}"></i>
+                </div>
+                <h2>{{ .title }}</h2>
+                <p class="service-description">{{ .description }}</p>
+                <ul class="benefits-list">
+                    {{ range .benefits }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+            {{ end }}
+
+            <div class="cta-section" style="margin-top: 40px; border-radius: 12px;">
+                <div class="section-container">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Let's discuss how I can help your team succeed with AWS.</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:{{ .Site.Params.email }}" class="btn btn-primary">Contact Me</a>
+                        <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank" rel="noopener" class="btn btn-secondary">Connect on LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial "footer.html" . }}

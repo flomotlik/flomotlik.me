@@ -3,14 +3,24 @@
     <div class="container">
         <div class="content">
             <div class="posts">
-                <div class="page-heading">Blog</div>
-                <ul>
-                    {{ range .Data.Pages.GroupByDate "Jan, 2006" "desc"}}
-                        {{ range .Pages.ByPublishDate }}
-                            {{ partial "li.html" . }}
-                        {{ end }}
+                <h1 class="page-heading">Blog</h1>
+                <p class="section-subtitle" style="text-align: left; margin-bottom: 40px;">
+                    Thoughts on AWS, infrastructure, and building better development processes.
+                </p>
+
+                <div class="blog-grid">
+                    {{ range .Pages.ByPublishDate.Reverse }}
+                    <article class="blog-card">
+                        <div class="blog-card-content">
+                            <div class="blog-date">{{ .Date.Format $.Site.Params.dateform }}</div>
+                            <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                            {{ if .Summary }}
+                            <p>{{ .Summary | truncate 150 }}</p>
+                            {{ end }}
+                        </div>
+                    </article>
                     {{ end }}
-                </ul>
+                </div>
             </div>
         </div>
     </div>

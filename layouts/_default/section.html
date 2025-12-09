@@ -3,7 +3,7 @@
     <div class="container">
         <div class="content">
             <div class="markdown">
-                {{ range .Data.Pages }}
+                {{ range .Pages }}
                     {{ if eq .Params.Index true }}
                         <h2>{{ .Title }}</h2>
                         {{ .Content }}
@@ -11,9 +11,9 @@
                 {{ end }}
             </div>
             <div class="posts">
-            {{ if ne (len (where .Data.Pages "Params.Index" "!=" true)) 0}}
+            {{ if ne (len (where .Pages "Params.Index" "!=" true)) 0}}
                 <ul>
-                    {{ range .Data.Pages.ByPublishDate }}
+                    {{ range .Pages.ByPublishDate }}
                         {{ if ne .Params.Index true }}
                           <li class="post-item">
                               <a href="{{ .Permalink }}"><span>{{ .Title }}</span></a>

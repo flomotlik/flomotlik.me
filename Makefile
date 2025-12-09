@@ -1,15 +1,21 @@
-.PHONY: css clean prepare deploy
+.PHONY: css css-min clean build serve
 
-css: clean
+css:
+	mkdir -p static/css
 	lessc css/less/main.less static/css/main.css
+	cp css/*.css static/css
+
+css-min:
+	mkdir -p static/css
+	lessc --clean-css css/less/main.less static/css/main.css
 	cp css/*.css static/css
 
 clean:
 	rm -rf static/css
 	rm -rf public
 
-build:
-	hugo
+build: clean css
+	hugo --minify
 
-deploy: clean css build
-	aws s3 sync public s3://flomotlik.me --acl public-read --delete
+serve:
+	hugo server --bind 0.0.0.0 --baseURL http://localhost:1313 --disableFastRender
