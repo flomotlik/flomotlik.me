@@ -1,0 +1,49 @@
+# Expertise areas - AWS Consultant Portfolio
+
+- id: infrastructure
+  title: "Infrastructure & DevOps"
+  icon: "ion-ios-cloud"
+  description: "Building robust, automated cloud infrastructure"
+  technologies:
+    - "AWS CDK"
+    - "CloudFormation"
+    - "Terraform"
+    - "CI/CD Pipelines"
+    - "EKS / ECS"
+    - "GitHub Actions"
+
+- id: serverless
+  title: "Serverless & Modern Apps"
+  icon: "ion-ios-flash"
+  description: "Event-driven architectures that scale automatically"
+  technologies:
+    - "AWS Lambda"
+    - "API Gateway"
+    - "Step Functions"
+    - "EventBridge"
+    - "DynamoDB"
+    - "AppSync"
+
+- id: security
+  title: "Security & Compliance"
+  icon: "ion-ios-shield"
+  description: "Secure-by-design infrastructure with compliance built in"
+  technologies:
+    - "IAM Best Practices"
+    - "Security Hub"
+    - "GuardDuty"
+    - "AWS Organizations"
+    - "SCPs"
+    - "Compliance Frameworks"
+
+- id: automation
+  title: "Infrastructure as Code"
+  icon: "ion-ios-code"
+  description: "Treating infrastructure like software for consistency and speed"
+  technologies:
+    - "AWS CDK (TypeScript)"
+    - "CloudFormation"
+    - "Terraform"
+    - "Ansible"
+    - "GitOps"
+    - "Policy as Code"

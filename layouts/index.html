@@ -1,46 +1,21 @@
 {{ partial "header.html" . }}
-<section class="main">
-    <div class="container">
-        <div class="content">
-            {{ range where .Data.Pages "Title" "Home" }}
-                <div class="markdown">
-                {{ .Content }}
-                </div>
-            {{ end }}
 
-            <div class="posts">
-            {{ $nbPosts := len (where .Data.Pages "Section" "blog") }}
-            {{ if gt $nbPosts 0 }}
-                <h2 class="page-heading">Latest posts</h2>
-                <ul>
-                {{ range (first .Site.Params.latestpostcount (where .Pages "Section" "blog")).GroupByDate "Jan, 2006" "desc" }}
-                    <li class="groupby">{{ .Key }}</li>
-                    {{ range .Pages.ByPublishDate }}
-                        {{ partial "li.html" . }}
-                    {{ end }}
-                {{ end }}
-                </ul>
+{{ partial "hero.html" . }}
 
-                {{ if gt $nbPosts .Site.Params.latestpostcount }}
-                    <a href="./blog/" class="see-more">See more ...</a>
-                {{ end }}
-            {{ end }}
-            </div>
+{{ partial "problems-solution.html" . }}
 
-            <div class="posts">
-            {{ $nbPosts := len (where .Data.Pages "Params.best" true) }}
-            {{ if gt $nbPosts 0 }}
-                <h2 class="page-heading">Best posts</h2>
-                <ul>
-                {{ range .Data.Pages.ByPublishDate }}
-                    {{ if eq .Params.best true }}
-                        {{ partial "li.html" . }}
-                    {{ end }}
-                {{ end }}
-                </ul>
-            {{ end }}
-            </div>
-        </div>
-    </div>
-</section>
+{{ partial "services-overview.html" . }}
+
+{{ partial "expertise-areas.html" . }}
+
+{{ partial "open-source.html" . }}
+
+{{ partial "podcast.html" . }}
+
+{{/* Testimonials - uncomment when real testimonials are available
+{{ partial "testimonials.html" . }}
+*/}}
+
+{{ partial "cta.html" . }}
+
 {{ partial "footer.html" . }}

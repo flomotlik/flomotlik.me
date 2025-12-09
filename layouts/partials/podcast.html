@@ -1,0 +1,26 @@
+<section class="podcast-section">
+    <div class="section-container">
+        <div class="podcast-card">
+            <h3>AWS News Weekly Podcast</h3>
+            <p>
+                Stay up-to-date with the latest AWS announcements and news.
+                Every week I break down what matters for developers and architects,
+                with {{ .Site.Params.podcast_episodes | default "28+" }} episodes and counting.
+            </p>
+            <div class="podcast-links">
+                {{ if .Site.Params.podcast_spotify }}
+                <a href="{{ .Site.Params.podcast_spotify }}" target="_blank" rel="noopener">
+                    <i class="icon ion-ios-play"></i>
+                    Spotify
+                </a>
+                {{ end }}
+                {{ if .Site.Params.podcast_apple }}
+                <a href="{{ .Site.Params.podcast_apple }}" target="_blank" rel="noopener">
+                    <i class="icon ion-ios-play"></i>
+                    Apple Podcasts
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>

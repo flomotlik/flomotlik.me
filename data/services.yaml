@@ -1,0 +1,60 @@
+# Services offered by Florian Motlik - AWS Consultant
+
+- id: architecture
+  title: "AWS Architecture & Design"
+  icon: "ion-ios-grid"
+  short_description: "Infrastructure design and well-architected reviews"
+  description: |
+    Expert guidance on designing scalable, secure, and cost-effective AWS architectures.
+    I help teams make the right architectural decisions from the start, avoiding costly
+    refactoring later.
+  benefits:
+    - "Well-Architected Framework reviews"
+    - "Infrastructure design and documentation"
+    - "Security and compliance architecture"
+    - "Cost optimization strategies"
+    - "Multi-account organization structure"
+
+- id: implementation
+  title: "Hands-on Implementation"
+  icon: "ion-ios-construct"
+  short_description: "Building and deploying AWS solutions"
+  description: |
+    From architecture to reality. I work alongside your team to implement infrastructure
+    using modern Infrastructure as Code practices, ensuring consistency and repeatability
+    across all environments.
+  benefits:
+    - "Infrastructure as Code (CDK, CloudFormation, Terraform)"
+    - "CI/CD pipeline implementation"
+    - "Container orchestration (EKS, ECS)"
+    - "Serverless application deployment"
+    - "Migration execution support"
+
+- id: training
+  title: "Training & Workshops"
+  icon: "ion-ios-school"
+  short_description: "Teaching teams AWS best practices"
+  description: |
+    Empower your team with the knowledge they need to own and operate AWS infrastructure
+    confidently. Custom workshops tailored to your specific technology stack and skill levels.
+  benefits:
+    - "AWS fundamentals and best practices"
+    - "Infrastructure as Code workshops"
+    - "DevOps and CI/CD training"
+    - "Serverless development"
+    - "Hands-on labs and exercises"
+
+- id: advisory
+  title: "Fractional CTO / Advisory"
+  icon: "ion-ios-bulb"
+  short_description: "Strategic technical leadership"
+  description: |
+    Part-time technical leadership for growing teams. I provide strategic guidance,
+    help with hiring and team building, and ensure your technical direction aligns
+    with business goals.
+  benefits:
+    - "Technical strategy and roadmap"
+    - "Team building and hiring support"
+    - "Vendor and technology evaluation"
+    - "Technical due diligence"
+    - "Engineering process optimization"

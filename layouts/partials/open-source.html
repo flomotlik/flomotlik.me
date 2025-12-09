@@ -1,0 +1,26 @@
+<section class="opensource-section">
+    <div class="section-container">
+        <h2 class="section-title">Open Source Projects</h2>
+        <p class="section-subtitle">AWS tooling I've built and maintain at <a href="https://github.com/theserverlessway" target="_blank" rel="noopener">github.com/theserverlessway</a></p>
+
+        <div class="projects-grid">
+            {{ range .Site.Data.projects }}
+            <div class="project-card">
+                <div class="project-header">
+                    <h3><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></h3>
+                    <span class="stars">
+                        <i class="icon ion-ios-star"></i>
+                        {{ .stars }}
+                    </span>
+                </div>
+                <p>{{ .description }}</p>
+                <div class="project-tags">
+                    {{ range .tags }}
+                    <span>{{ . }}</span>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

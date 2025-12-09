@@ -11,29 +11,20 @@
 <section class="header header-home">
 {{ end }}
     <div class="container">
-        <a href="{{ .Site.BaseURL }}"><img class="logo" src="https://gravatar.com/avatar/{{ md5 .Site.Params.email }}?s=150" /></a>
         <div class="content">
-            <a href="{{ .Site.BaseURL }}"><div class="name"><h1>{{ .Site.Title }}</h1></div></a>
-            <nav>
-                <ul>
-                    {{ if ne (len (where .Site.RegularPages "Section" "blog")) 0 }}
-                        <li><a href="{{ .Site.BaseURL }}blog/">Blog</a></li>
-                    {{ end }}
-                    {{ range .Site.Sections }}
-                        {{ range first 1 (where .Pages "Section" "ne" "")}}
-                            {{ if ne .Section "blog"}}
-                            <li><a href="{{ .Section | urlize }}">{{ replace .Section "-" " " }}</a></li>
-                            {{ end }}
-                        {{ end }}
-                    {{ end }}
-                    {{ range where .Site.RegularPages "Section" ""}}
-                        {{ if ne .Title "Home"}}
-                            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                        {{ end }}
-                    {{ end }}
-                </ul>
-            </nav>
+            <a href="{{ .Site.BaseURL }}"><img class="logo" src="{{ .Site.BaseURL }}img/headshot.jpg" alt="{{ .Site.Author }}" /></a>
+            <a href="{{ .Site.BaseURL }}"><div class="name"><h1>{{ .Site.Author | default "Florian Motlik" }}</h1></div></a>
         </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="{{ .Site.BaseURL }}" {{ if .IsHome }}class="active"{{ end }}>Home</a></li>
+                <li><a href="{{ .Site.BaseURL }}services/" {{ if eq .Title "Services" }}class="active"{{ end }}>Services</a></li>
+                <li><a href="{{ .Site.BaseURL }}about/" {{ if eq .Title "About" }}class="active"{{ end }}>About</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-nav-toggle" onclick="document.getElementById('main-nav').classList.toggle('active')" aria-label="Toggle navigation">
+            <i class="icon ion-navicon"></i>
+        </button>
     </div>
 </section>
 
@@ -42,32 +33,26 @@
         <div class="content">
 
         {{ if .Site.Params.github }}
-            <a href="https://github.com/{{ .Site.Params.github }}" target="_blank">
-                <i class="icon ion-social-github" title="github"></i>
-            </a>
-        {{ end }}
-
-        {{ if .Site.Params.twitter }}
-            <a href="https://twitter.com/{{ .Site.Params.twitter }}" target="_blank">
-                <i class="icon ion-social-twitter" title="twitter"></i>
+            <a href="https://github.com/{{ .Site.Params.github }}" target="_blank" rel="noopener" title="GitHub">
+                <i class="icon ion-social-github"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.linkedin }}
-            <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank">
-                <i class="icon ion-social-linkedin" title="linkedin"></i>
+            <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank" rel="noopener" title="LinkedIn">
+                <i class="icon ion-social-linkedin"></i>
             </a>
         {{ end }}
 
         {{ if .Site.Params.email }}
-            <a href="mailto:{{ .Site.Params.email }}">
-                <i class="icon ion-ios-email larger" title="email"></i>
+            <a href="mailto:{{ .Site.Params.email }}" title="Email">
+                <i class="icon ion-ios-email larger"></i>
             </a>
         {{ end }}
 
-        {{ if .Site.RSSLink }}
-            <a href="{{ .Site.RSSLink }}">
-                <i class="icon ion-social-rss larger" title="rss"></i>
+        {{ with .Site.Home.OutputFormats.Get "RSS" }}
+            <a href="{{ .RelPermalink }}" title="RSS Feed">
+                <i class="icon ion-social-rss larger"></i>
             </a>
         {{ end }}
         </div>

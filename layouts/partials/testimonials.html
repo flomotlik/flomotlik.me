@@ -1,0 +1,25 @@
+<section class="testimonials-section">
+    <div class="section-container">
+        <h2 class="section-title">What Clients Say</h2>
+        <p class="section-subtitle">Feedback from teams I've worked with</p>
+
+        <div class="testimonials-grid">
+            {{ range where .Site.Data.testimonials "featured" true }}
+            <div class="testimonial-card">
+                <p class="quote">{{ .quote }}</p>
+                <div class="author">
+                    {{ if .image }}
+                    <img src="{{ .image }}" alt="{{ .name }}" class="author-image">
+                    {{ else }}
+                    <div class="author-image"></div>
+                    {{ end }}
+                    <div class="author-info">
+                        <div class="name">{{ .name }}</div>
+                        <div class="role">{{ .role }}, {{ .company }}</div>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

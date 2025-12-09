@@ -1,0 +1,23 @@
+# Client Testimonials - Placeholder structure
+# Replace with actual testimonials when available
+
+- name: "Client Name"
+  company: "Company Name"
+  role: "CTO"
+  quote: "Florian's deep AWS expertise helped us transform our infrastructure. His hands-on approach and clear communication made the entire process smooth."
+  image: ""
+  featured: true
+
+- name: "Another Client"
+  company: "Tech Startup"
+  role: "VP Engineering"
+  quote: "Working with Florian was a game-changer for our team. He not only implemented our AWS infrastructure but also trained our engineers to maintain and extend it."
+  image: ""
+  featured: true
+
+- name: "Third Client"
+  company: "Enterprise Corp"
+  role: "Director of Platform"
+  quote: "The AWS baseline implementation Florian delivered gave us a solid foundation for compliance and security. Highly recommended for any enterprise AWS project."
+  image: ""
+  featured: false

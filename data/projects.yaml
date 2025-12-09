@@ -1,0 +1,51 @@
+# Open Source Projects from github.com/theserverlessway
+
+- name: "AWS Baseline"
+  repo: "theserverlessway/aws-baseline"
+  url: "https://github.com/theserverlessway/aws-baseline"
+  stars: 134
+  description: "Enterprise-ready AWS organization baseline with security best practices, compliance controls, and multi-account setup."
+  tags:
+    - "AWS Organizations"
+    - "Security"
+    - "CloudFormation"
+
+- name: "AWSinfo"
+  repo: "theserverlessway/awsinfo"
+  url: "https://github.com/theserverlessway/awsinfo"
+  stars: 96
+  description: "Bash-based CLI tool that makes AWS information easily accessible. Simple commands for complex AWS queries."
+  tags:
+    - "CLI"
+    - "Bash"
+    - "DevOps"
+
+- name: "Formica"
+  repo: "theserverlessway/formica"
+  url: "https://github.com/theserverlessway/formica"
+  stars: 63
+  description: "CloudFormation deployment tool with powerful templating, change sets, and stack management capabilities."
+  tags:
+    - "CloudFormation"
+    - "Deployment"
+    - "Python"
+
+- name: "AWSie"
+  repo: "theserverlessway/awsie"
+  url: "https://github.com/theserverlessway/awsie"
+  stars: 24
+  description: "CloudFormation-aware AWS CLI wrapper that automatically resolves stack outputs and resources."
+  tags:
+    - "CLI"
+    - "CloudFormation"
+    - "Productivity"
+
+- name: "Former2"
+  repo: "theserverlessway/former"
+  url: "https://github.com/theserverlessway/former"
+  stars: 15
+  description: "Reverse-engineer existing AWS resources into CloudFormation templates."
+  tags:
+    - "CloudFormation"
+    - "Migration"
+    - "Python"

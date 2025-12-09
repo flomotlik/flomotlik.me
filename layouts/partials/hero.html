@@ -1,0 +1,24 @@
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <p class="hero-tagline">{{ .Site.Params.tagline | default "AWS Infrastructure Expert" }}</p>
+            <h1 class="hero-title">Streamline Your AWS Infrastructure</h1>
+            <p class="hero-subtitle">
+                I help teams cut through AWS complexity to build infrastructure that's
+                <strong>automated</strong>, <strong>secure</strong>, and <strong>scalable</strong>.
+                With {{ .Site.Params.years_experience | default "15+" }} years of hands-on experience,
+                I bring enterprise-level expertise to projects of any size.
+            </p>
+            <div class="hero-experience">
+                <span class="experience-badge">{{ .Site.Params.years_experience | default "15+" }} Years Experience</span>
+            </div>
+            <div class="hero-cta">
+                <a href="mailto:{{ .Site.Params.email }}" class="btn btn-primary">Get in Touch</a>
+                <a href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" target="_blank" rel="noopener" class="btn btn-secondary">Connect on LinkedIn</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="{{ .Site.BaseURL }}img/headshot.jpg" alt="Florian Motlik - AWS Consultant">
+        </div>
+    </div>
+</section>

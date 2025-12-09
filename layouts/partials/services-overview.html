@@ -1,0 +1,19 @@
+<section class="services-section">
+    <div class="section-container">
+        <h2 class="section-title">How I Can Help</h2>
+        <p class="section-subtitle">Tailored consulting services to meet your AWS infrastructure needs</p>
+
+        <div class="services-grid">
+            {{ range .Site.Data.services }}
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="icon {{ .icon }}"></i>
+                </div>
+                <h3>{{ .title }}</h3>
+                <p>{{ .short_description }}</p>
+                <a href="{{ $.Site.BaseURL }}services/" class="service-link">Learn more</a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

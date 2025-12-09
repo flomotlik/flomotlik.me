@@ -1,0 +1,23 @@
+<section class="expertise-section">
+    <div class="section-container">
+        <h2 class="section-title">Areas of Expertise</h2>
+        <p class="section-subtitle">Deep experience across the AWS ecosystem</p>
+
+        <div class="expertise-grid">
+            {{ range .Site.Data.expertise }}
+            <div class="expertise-card">
+                <div class="expertise-icon">
+                    <i class="icon {{ .icon }}"></i>
+                </div>
+                <h3>{{ .title }}</h3>
+                <p>{{ .description }}</p>
+                <div class="tech-tags">
+                    {{ range .technologies }}
+                    <span>{{ . }}</span>
+                    {{ end }}
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
