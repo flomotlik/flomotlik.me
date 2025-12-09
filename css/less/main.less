@@ -1,29 +1,52 @@
-// Less variables
+// Less variables - AWS Consultant Portfolio Design System
 
 @base-font-size: 16px;
 @vspacing: @base-font-size*2;
 
 @wide-1-breakpoint: 600px;
+@wide-2-breakpoint: 768px;
+@wide-3-breakpoint: 1024px;
 
+// Typography - Warm & Approachable
 @monospace-font-stack: ~"'Ubuntu Mono', 'Menlo', monospace";
-@body-font-stack: ~"'Open Sans', 'Helvetica Neue', 'Arial', sans-serif";
-@heading-font-stack: ~"'Raleway', 'Helvetica Neue', 'Arial', sans-serif";
-@special-font-stack-1: ~"'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif";
+@body-font-stack: ~"'Nunito', 'Helvetica Neue', 'Arial', sans-serif";
+@heading-font-stack: ~"'Nunito', 'Helvetica Neue', 'Arial', sans-serif";
+@special-font-stack-1: ~"'Nunito', 'Helvetica Neue', 'Arial', sans-serif";
 
-@black: #333333;
-@black-content: #111111;
-@gray: #666666;
-@accent: #428bca; // alt: rgba(244,109,44,1);
-@link-hover: #2a6496; // alt: rgba(222,90,29,1);
-@complementary-accent: #1DA1DE;
-@background: #f7f7f7;
-@compensated-black: #555555;
-@compensated-gray: #999999;
-@compensated-black-hover: #111111;
-@compensated-gray-hover: #b7b7b7;
-@white: #fefefe;
-@milk: #fefefe;
+// Primary Colors - Deep Teal (professional yet warm)
+@primary: #0D6E6E;
+@primary-dark: #095555;
+@primary-light: #1A8F8F;
 
+// Accent Colors - AWS Orange (CTAs, highlights)
+@accent: #FF9900;
+@accent-dark: #E68A00;
+@accent-light: #FFB84D;
+
+// Background Colors - Warm tones
+@background: #FDF8F3;
+@background-alt: #F5EFE6;
+@background-card: #FFFFFF;
+
+// Text Colors - Charcoal (not pure black)
+@text-primary: #2D3436;
+@text-secondary: #636E72;
+@text-light: #B2BEC3;
+
+// Legacy color mappings (for backward compatibility)
+@black: @text-primary;
+@black-content: @text-primary;
+@gray: @text-secondary;
+@link-hover: @primary-dark;
+@complementary-accent: @primary-light;
+@compensated-black: @text-secondary;
+@compensated-gray: @text-light;
+@compensated-black-hover: @text-primary;
+@compensated-gray-hover: #ddd;
+@white: #FFFFFF;
+@milk: #FFFFFF;
+
+// Transition timing
 @transition-speed-1: .1s;
 @transition-speed-2: .25s;
 @in-sine: cubic-bezier(0.47, 0, 0.75, 0.72);
