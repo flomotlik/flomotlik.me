@@ -9,12 +9,13 @@
                 </p>
 
                 <div class="blog-grid">
-                    {{ range .Pages.ByPublishDate.Reverse }}
+                    {{ range .Pages.ByWeight }}
                     <article class="blog-card">
                         <div class="blog-card-content">
-                            <div class="blog-date">{{ .Date.Format $.Site.Params.dateform }}</div>
                             <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-                            {{ if .Summary }}
+                            {{ if .Description }}
+                            <p>{{ .Description }}</p>
+                            {{ else if .Summary }}
                             <p>{{ .Summary | truncate 150 }}</p>
                             {{ end }}
                         </div>

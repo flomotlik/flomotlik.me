@@ -19,6 +19,7 @@
             <ul>
                 <li><a href="{{ .Site.BaseURL }}" {{ if .IsHome }}class="active"{{ end }}>Home</a></li>
                 <li><a href="{{ .Site.BaseURL }}services/" {{ if eq .Title "Services" }}class="active"{{ end }}>Services</a></li>
+                <li><a href="{{ .Site.BaseURL }}blog/" {{ if eq .Section "blog" }}class="active"{{ end }}>Blog</a></li>
                 <li><a href="{{ .Site.BaseURL }}about/" {{ if eq .Title "About" }}class="active"{{ end }}>About</a></li>
             </ul>
         </nav>
