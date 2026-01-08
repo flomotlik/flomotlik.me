@@ -14,7 +14,7 @@
 
 - id: serverless
   title: "Serverless & Modern Apps"
-  icon: "ion-ios-flash"
+  icon: "ion-ios-bolt"
   description: "Event-driven architectures that scale automatically"
   technologies:
     - "AWS Lambda"
@@ -26,7 +26,7 @@
 
 - id: security
   title: "Security & Compliance"
-  icon: "ion-ios-shield"
+  icon: "ion-ios-locked"
   description: "Secure-by-design infrastructure with compliance built in"
   technologies:
     - "IAM Best Practices"
@@ -38,7 +38,7 @@
 
 - id: automation
   title: "Infrastructure as Code"
-  icon: "ion-ios-code"
+  icon: "ion-code"
   description: "Treating infrastructure like software for consistency and speed"
   technologies:
     - "AWS CDK (TypeScript)"

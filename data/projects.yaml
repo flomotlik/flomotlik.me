@@ -1,14 +1,4 @@
-# Open Source Projects from github.com/theserverlessway
-
-- name: "AWS Baseline"
-  repo: "theserverlessway/aws-baseline"
-  url: "https://github.com/theserverlessway/aws-baseline"
-  stars: 134
-  description: "Enterprise-ready AWS organization baseline with security best practices, compliance controls, and multi-account setup."
-  tags:
-    - "AWS Organizations"
-    - "Security"
-    - "CloudFormation"
+# Open Source Projects
 
 - name: "AWSinfo"
   repo: "theserverlessway/awsinfo"
@@ -40,12 +30,12 @@
     - "CloudFormation"
     - "Productivity"
 
-- name: "Former2"
-  repo: "theserverlessway/former"
-  url: "https://github.com/theserverlessway/former"
-  stars: 15
-  description: "Reverse-engineer existing AWS resources into CloudFormation templates."
+- name: "AWSquery"
+  repo: "flomotlik/awsquery"
+  url: "https://github.com/flomotlik/awsquery"
+  stars: 0
+  description: "AWS CLI tool for executing read-only API commands with flexible filtering and custom tabular output formatting."
   tags:
-    - "CloudFormation"
-    - "Migration"
-    - "Python"
+    - "CLI"
+    - "AWS"
+    - "Go"
