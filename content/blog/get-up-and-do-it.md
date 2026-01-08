@@ -1,7 +1,8 @@
 +++
-title = "Get up and do it, or why you should ride the pink plastic pony"
-date = "2017-02-23"
-draft = "false"
+title = "Get Up and Do It, or Why You Should Ride the Pink Plastic Pony"
+slug = "ride-the-pink-plastic-pony"
+description = "A life lesson from my father about taking opportunities and keeping the show going"
+weight = 8
 +++
 
 My parents grew up in a small town in lower Austria, Herzogenburg. For the last 40 years there is a children's festival in the town that is now visited by more than 20000 people on the last 2 weekends of August.

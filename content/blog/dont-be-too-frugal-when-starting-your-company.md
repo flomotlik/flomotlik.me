@@ -1,7 +1,8 @@
 +++
-title = "Don’t be too frugal when starting your company"
-date = "2014-09-07T13:36:39+01:00"
-
+title = "Don't Be Too Frugal When Starting Your Company"
+slug = "dont-be-too-frugal"
+description = "Why over-optimizing for expenses early on can hurt your startup more than it helps"
+weight = 6
 +++
 
 Most founders I’ve met are frugal, which is a great quality to have for building a successful business. The problem with it though is that I’ve seen too many founders optimise for expenses way too early.

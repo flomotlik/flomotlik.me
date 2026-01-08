@@ -1,7 +1,8 @@
 +++
-date = "2016-06-29T13:41:37+01:00"
 title = "Vanity Work"
-
+slug = "vanity-work"
+description = "Work that makes you feel busy but doesn't actually accomplish anything - and how to avoid it"
+weight = 4
 +++
 
 Most Startups die through self inflicted wounds. They misjudge the market, don’t execute fast enough, blow up because of personal issues or simply don’t have the skill to build the product or company they are after.

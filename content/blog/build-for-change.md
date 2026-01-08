@@ -1,7 +1,8 @@
 +++
 title = "Build for Change"
-date = "2014-08-20T13:15:29+01:00"
-draft = "false"
+slug = "build-for-change"
+description = "Change is our biggest strength. Build your team, process, and technology to embrace it"
+weight = 3
 +++
 
 Change is how we evolve and how we improve. Change is how we learn and how we adapt.

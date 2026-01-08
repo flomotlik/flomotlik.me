@@ -1,7 +1,8 @@
 +++
-date = "2016-07-26T13:42:50+01:00"
 title = "Moving on from Codeship"
-
+slug = "moving-on-from-codeship"
+description = "Reflecting on five years building Codeship and the decision to move on"
+weight = 7
 +++
 
 This blogpost has been written and re-written in my head a number of times. Leaving Codeship, the company, product and team I’ve been working on, sweating for and bleeding with for the last 5 years was no easy decision.
