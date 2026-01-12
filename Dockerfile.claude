@@ -1,0 +1,56 @@
+# Dockerfile.claude - Claude Flow development container for Hugo static site
+# Extends claude-flow:latest with Hugo, Node.js/Less, and GitHub Pages deployment tools
+#
+# Build: docker build -f Dockerfile.claude -t flomotlik-website .
+# Run:   claude-flow-local  (or: clocal)
+#
+# Available commands:
+#   make css    - Compile Less CSS files
+#   make clean  - Remove build artifacts
+#   make build  - Build the Hugo site (runs clean + css + hugo)
+#   hugo server - Run development server on port 1313
+
+FROM claude-flow:latest
+
+# Install Hugo (latest v0.152.2) - detect architecture for correct binary
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    wget \
+    ca-certificates \
+    && ARCH=$(dpkg --print-architecture) \
+    && if [ "$ARCH" = "amd64" ]; then \
+    HUGO_ARCH="amd64"; \
+    elif [ "$ARCH" = "arm64" ]; then \
+    HUGO_ARCH="arm64"; \
+    else \
+    echo "Unsupported architecture: $ARCH" && exit 1; \
+    fi \
+    && wget -q -O hugo.deb "https://github.com/gohugoio/hugo/releases/download/v0.152.2/hugo_extended_0.152.2_linux-${HUGO_ARCH}.deb" \
+    && dpkg -i hugo.deb \
+    && rm hugo.deb \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Node.js and npm for Less CSS compiler
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    nodejs \
+    npm \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Less CSS compiler globally
+RUN npm install -g less
+
+# Install Git and GitHub CLI for GitHub Pages deployment
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    git \
+    && mkdir -p -m 755 /etc/apt/keyrings \
+    && wget -qO- https://cli.github.com/packages/githubcli-archive-keyring.gpg | tee /etc/apt/keyrings/githubcli-archive-keyring.gpg > /dev/null \
+    && chmod go+r /etc/apt/keyrings/githubcli-archive-keyring.gpg \
+    && echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends gh \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+# Expose Hugo development server port
+EXPOSE 1313
