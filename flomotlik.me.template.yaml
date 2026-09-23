@@ -1,3 +1,13 @@
+# SUPERSEDED — do not edit, and do not try to deploy this.
+#
+# DNS for flomotlik.me now lives in terraform/ (see terraform/README.md).
+# This file is kept only as the record of what the 2017 CloudFormation stack
+# `flomotlikme` (eu-central-1) still claims to own, which is needed to retire
+# that stack safely with DeletionPolicy: Retain.
+#
+# It cannot be deployed in any case: formica 0.6.2 does not run on Python 3.10+
+# and the pinned dns/cname module is missing its top-level `Resources:` key.
+
 {% set domain = 'flomotlik.me' %}
 {% set modules = 'modules/formica/' %}
 
