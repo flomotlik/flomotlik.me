@@ -45,3 +45,23 @@ Retiring it safely is a separate, deliberate job:
 Do not delete the stack before step 1. **The MX records carry live email.**
 
 [formica]: https://github.com/flomotlik/formica
+
+## Two states, on purpose
+
+| Directory | State key | Applied by | Contains |
+|---|---|---|---|
+| `terraform/` | `flomotlik.me/dns.tfstate` | GitHub Actions on `master` | the zone and its records |
+| `terraform/bootstrap/` | `flomotlik.me/bootstrap.tfstate` | you, by hand | the GitHub OIDC provider and the CI role |
+
+They are split because the CI role must not be able to manage its own IAM
+policy. A role that can rewrite its own permissions can grant itself anything,
+which would make scoping it pointless. CI's policy therefore covers exactly one
+hosted zone, the state object and the lock table — and the configuration it
+applies contains no IAM at all.
+
+`bootstrap/` changes rarely. Apply it locally:
+
+```bash
+cd terraform/bootstrap
+terraform init && terraform plan   # then apply if it looks right
+```
