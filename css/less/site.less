@@ -1004,6 +1004,21 @@ img {
             flex: 1;
         }
 
+        .project-site {
+            margin: 0 0 12px;
+            font-size: 0.85rem;
+
+            a {
+                color: @primary;
+                text-decoration: none;
+                border-bottom: 1px solid fade(@primary, 35%);
+
+                &:hover {
+                    border-bottom-color: @primary;
+                }
+            }
+        }
+
         .project-tags {
             .flex-display();
             .flex-wrap(wrap);

@@ -4,22 +4,45 @@ date = "2017-01-13T14:11:24+01:00"
 
 +++
 
-## [Formica](https://github.com/flomotlik/formica)
+## [fm design system](https://design-system.flomotlik.me/)
 
-A CloudFormation stack management and template building tool. Designed to make CF easy and building CF templates moduler
+A shared stylesheet and component set for small web tools — header, forms,
+tables, dropzones, toasts, modals and search. Colours are named by role rather
+than by hue, which is what makes a theme a flat set of token values instead of
+a fork: three themes ship (tool, report, notebook), each with its own dark
+palette, plus independent density and high-contrast axes.
 
-## [AWSIE](https://github.com/flomotlik/awsie)
+One `<link>`, no npm and no build step for anything that consumes it. Every
+colour in the source carries its measured contrast ratio.
 
-CloudFormation aware wrapper for the awscli so you can get the physicalID of resources for a call to the awscli from CloudFormation:
+[Style guide](https://design-system.flomotlik.me/) ·
+[Source](https://github.com/flomotlik/design-system)
 
-```shell
-awsie example-stack s3 ls s3://cf:DeploymentBucket: --region us-west-1
-```
+## [AI build guide](https://ai-build-guide.flomotlik.me/)
 
-gets translated to:
+How to get an AI assistant to build a small tool that actually runs for someone
+who has a browser and nothing else — no terminal, no editor, no package
+manager, no admin rights. The constraints that follow from that are stricter
+than they first look, and most of the guide is about them.
 
-```shell
-aws s3 ls s3://formica-example-stack-deploymentbucket-1jjzisylxreh9 --region us-west-1
-```
+It is published as [llms.txt](https://ai-build-guide.flomotlik.me/llms.txt) so
+an assistant can read it directly, rather than being pasted in by hand.
 
-For more check out my [Github profile](https://github.com/flomotlik).
+[Guide](https://ai-build-guide.flomotlik.me/) ·
+[Source](https://github.com/flomotlik/ai-build-guide)
+
+## [AWSquery](https://github.com/flomotlik/awsquery)
+
+Read-only AWS CLI queries with flexible filtering and tabular output.
+
+## Older AWS tooling
+
+[Formica](https://github.com/theserverlessway/formica) (CloudFormation
+deployment with templating and change sets),
+[AWSie](https://github.com/theserverlessway/awsie) (a CloudFormation-aware
+`awscli` wrapper that resolves stack resources) and
+[AWSinfo](https://github.com/theserverlessway/awsinfo) (a bash CLI over common
+AWS lookups). These are from the Codeship and Serverless Way years and are no
+longer maintained.
+
+For everything else see my [GitHub profile](https://github.com/flomotlik).

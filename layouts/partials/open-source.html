@@ -1,7 +1,7 @@
 <section class="opensource-section">
     <div class="section-container">
         <h2 class="section-title">Open Source Projects</h2>
-        <p class="section-subtitle">AWS tooling I've built and maintain at <a href="https://github.com/theserverlessway" target="_blank" rel="noopener">github.com/theserverlessway</a></p>
+        <p class="section-subtitle">Tools and systems I've built and maintain, on <a href="https://github.com/flomotlik" target="_blank" rel="noopener">GitHub</a></p>
 
         <div class="projects-grid">
             {{ range .Site.Data.projects }}
@@ -14,6 +14,9 @@
                     </span>
                 </div>
                 <p>{{ .description }}</p>
+                {{ with .site }}
+                <p class="project-site"><a href="{{ . }}" target="_blank" rel="noopener">{{ . | replaceRE "^https://" "" | replaceRE "/$" "" }}</a></p>
+                {{ end }}
                 <div class="project-tags">
                     {{ range .tags }}
                     <span>{{ . }}</span>

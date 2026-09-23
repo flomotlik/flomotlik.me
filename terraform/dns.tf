@@ -73,3 +73,12 @@ resource "aws_route53_record" "design_system" {
   ttl     = 300
   records = ["flomotlik.github.io"]
 }
+
+# ai-build-guide.flomotlik.me -> the flomotlik/ai-build-guide Pages site.
+resource "aws_route53_record" "ai_build_guide" {
+  zone_id = aws_route53_zone.flomotlik_me.zone_id
+  name    = "ai-build-guide.flomotlik.me"
+  type    = "CNAME"
+  ttl     = 300
+  records = ["flomotlik.github.io"]
+}

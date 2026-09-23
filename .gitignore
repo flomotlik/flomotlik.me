@@ -1,3 +1,5 @@
 public
 .idea
 static/css
+node_modules
+.hugo_build.lock

@@ -1,5 +1,27 @@
 # Open Source Projects
 
+- name: "fm design system"
+  repo: "flomotlik/design-system"
+  url: "https://github.com/flomotlik/design-system"
+  site: "https://design-system.flomotlik.me/"
+  stars: 0
+  description: "A stylesheet and component set for small web tools. Role-named tokens, three themes with dark mode, and no build step for anything that consumes it."
+  tags:
+    - "CSS"
+    - "Design System"
+    - "Accessibility"
+
+- name: "AI build guide"
+  repo: "flomotlik/ai-build-guide"
+  url: "https://github.com/flomotlik/ai-build-guide"
+  site: "https://ai-build-guide.flomotlik.me/"
+  stars: 0
+  description: "How to get an AI assistant to build a small tool that actually runs for someone with a browser and nothing else. Published as llms.txt for assistants to read directly."
+  tags:
+    - "AI"
+    - "llms.txt"
+    - "Guide"
+
 - name: "AWSinfo"
   repo: "theserverlessway/awsinfo"
   url: "https://github.com/theserverlessway/awsinfo"
