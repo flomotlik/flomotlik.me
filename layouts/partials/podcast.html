@@ -9,14 +9,15 @@
             <div class="podcast-main">
                 <p class="podcast-lead">
                     AWS ships hundreds of announcements a month and almost none of them come with
-                    a note explaining whether they matter to you. Every Monday I read through all
-                    of them and record the ones that change how you build.
+                    a note explaining whether they matter to you. So I built a pipeline that reads
+                    every one of them each week, writes up what actually changed, and publishes it
+                    as a short episode — narrated by an AI model of my own voice.
                 </p>
 
                 <ul class="podcast-points">
                     <li><strong>What actually changed</strong> — new services, quota and pricing shifts, deprecations you need on your roadmap.</li>
-                    <li><strong>Why it matters</strong> — the practical read for developers and architects, not the press release.</li>
                     <li><strong>Short and weekly</strong> — one episode, every week, no backlog to catch up on.</li>
+                    <li><strong>Built on the stack it covers</strong> — Lambda collects the feeds, Bedrock writes the summary, and the pipeline ships an episode every week without anyone touching it.</li>
                 </ul>
 
                 <div class="podcast-links">
@@ -39,6 +40,10 @@
                     </a>
                     {{ end }}
                 </div>
+
+                <p class="podcast-disclosure">
+                    Summaries and narration are AI-generated, on a pipeline I built and run.
+                </p>
             </div>
 
             <div class="podcast-stats">
