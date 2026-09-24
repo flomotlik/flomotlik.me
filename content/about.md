@@ -48,7 +48,7 @@ These projects reflect my belief that good tooling should make complex tasks sim
 
 ## Beyond Work
 
-I live close to Vienna in the Austrian countryside, which I thoroughly enjoy. When I'm not building infrastructure, you'll find me spending time with my three daughters, contributing to my local community as part of local government, or recording episodes of the [AWS News Weekly podcast](https://open.spotify.com/show/7rj9KZWKljrAheNNiNk83j).
+I live close to Vienna in the Austrian countryside, which I thoroughly enjoy. When I'm not building infrastructure, you'll find me spending time with my three daughters, contributing to my local community as part of local government, or running the pipeline behind the [AWS News Weekly podcast](https://open.spotify.com/show/7rj9KZWKljrAheNNiNk83j).
 
 ## Let's Connect
 
