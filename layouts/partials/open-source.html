@@ -1,17 +1,19 @@
-<section class="opensource-section">
+<section class="opensource-section" id="open-source">
     <div class="section-container">
-        <h2 class="section-title">Open Source Projects</h2>
-        <p class="section-subtitle">Tools and systems I've built and maintain, on <a href="https://github.com/flomotlik" target="_blank" rel="noopener">GitHub</a></p>
+        <h2 class="section-title">More Open Source</h2>
+        <p class="section-subtitle">The AWS tooling I've built and maintained over the years, on <a href="https://github.com/flomotlik" target="_blank" rel="noopener">GitHub</a></p>
 
         <div class="projects-grid">
             {{ range .Site.Data.projects }}
             <div class="project-card">
                 <div class="project-header">
                     <h3><a href="{{ .url }}" target="_blank" rel="noopener">{{ .name }}</a></h3>
+                    {{ if gt .stars 0 }}
                     <span class="stars">
                         <i class="icon ion-ios-star"></i>
                         {{ .stars }}
                     </span>
+                    {{ end }}
                 </div>
                 <p>{{ .description }}</p>
                 {{ with .site }}

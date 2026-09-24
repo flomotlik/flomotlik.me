@@ -1,0 +1,50 @@
+# AI tooling — the AI-aware tools and guides featured in their own section.
+# Rendered by layouts/partials/ai-tooling.html
+
+- name: "AWSquery"
+  kind: "AWS CLI, built for humans and agents"
+  url: "https://github.com/flomotlik/awsquery"
+  cta: "View on GitHub"
+  icon: "ion-ios-search-strong"
+  headline: "Ask AWS a question, get a table back"
+  description: >-
+    Any read-only AWS API call, filtered across every nested field, returned as exactly
+    the columns you asked for. It infers and resolves missing parameters on its own, so a
+    single command answers what normally takes three and a pass through jq.
+  command: "awsquery ec2 describe-instances prod web -- Tags.Name State InstanceId"
+  points:
+    - title: "Agent-native, not agent-adjacent"
+      text: "--docs prints the complete reference in one call; --schema, --list-services and --list-actions answer offline with no AWS credentials. An assistant learns the whole tool before it ever touches your account."
+    - title: "Built for a context window"
+      text: "csv, tsv and ndjson output plus --limit keep results small enough to hand to a model without burning the budget on JSON punctuation."
+    - title: "Safe to hand to an agent"
+      text: "Read-only operations are enforced, exit codes 0-4 are documented, errors come back as structured JSON, and nothing prompts when stdin is not a TTY."
+    - title: "Nothing to install"
+      text: "uvx awsquery runs it straight from PyPI — no virtualenv, no pip install, not even a Python of your own."
+  tags:
+    - "AI / Agent Tooling"
+    - "AWS"
+    - "Python"
+    - "Productivity"
+
+- name: "AI build guide"
+  kind: "A guide written for models, not for people"
+  url: "https://ai-build-guide.flomotlik.me/"
+  cta: "Read the guide"
+  icon: "ion-ios-lightbulb"
+  headline: "Get an AI assistant to build a tool that actually runs"
+  description: >-
+    Someone with a browser and a chat window — no terminal, no editor, no package manager —
+    pastes one paragraph, describes their problem, and gets back a folder that opens with a
+    double-click. The paragraph points the assistant at llms.txt, where the real rules live.
+  points:
+    - title: "Published as llms.txt"
+      text: "llms.txt and llms-full.txt let an assistant read the constraints directly instead of guessing at them."
+    - title: "Thirteen sections"
+      text: "From what to deliver and how to deliver it, through documentation, to GitHub Pages and example repositories."
+    - title: "Measured, not assumed"
+      text: "Every constraint checked against real browsers on file:// — what works, what fails, and why ES modules and fetch() are out."
+  tags:
+    - "AI"
+    - "llms.txt"
+    - "Guide"

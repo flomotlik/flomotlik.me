@@ -1,0 +1,49 @@
+<section class="ai-tooling-section" id="ai-tooling">
+    <div class="section-container">
+        <h2 class="section-title">AI Tooling</h2>
+        <p class="section-subtitle">
+            Assistants are already in the loop on AWS work. I build the tooling that makes them
+            useful there — and the guides that tell them how to behave.
+        </p>
+
+        {{ range .Site.Data.ai_tooling }}
+        <article class="tool-card">
+            <div class="tool-intro">
+                <div class="tool-heading">
+                    <div class="tool-icon">
+                        <i class="icon {{ .icon }}"></i>
+                    </div>
+                    <div>
+                        <h3>{{ .name }}</h3>
+                        <p class="tool-kind">{{ .kind }}</p>
+                    </div>
+                </div>
+
+                <p class="tool-headline">{{ .headline }}</p>
+                <p class="tool-description">{{ .description }}</p>
+
+                {{ with .command }}
+                <pre class="tool-command"><code>{{ . }}</code></pre>
+                {{ end }}
+
+                <div class="tool-tags">
+                    {{ range .tags }}
+                    <span>{{ . }}</span>
+                    {{ end }}
+                </div>
+
+                <a href="{{ .url }}" target="_blank" rel="noopener" class="btn btn-primary tool-cta">{{ .cta | default "View on GitHub" }}</a>
+            </div>
+
+            <ul class="tool-points">
+                {{ range .points }}
+                <li>
+                    <strong>{{ .title }}</strong>
+                    <span>{{ .text }}</span>
+                </li>
+                {{ end }}
+            </ul>
+        </article>
+        {{ end }}
+    </div>
+</section>

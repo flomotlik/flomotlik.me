@@ -934,7 +934,7 @@ img {
 
 @media (min-width: @wide-3-breakpoint) {
     .expertise-section .expertise-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -1051,63 +1051,419 @@ img {
     }
 }
 
-// Podcast Section
-.podcast-section {
-    padding: 60px 20px;
-    background: @white;
+// Highlights strip - podcast and tooling, straight under the hero
+
+html {
+    scroll-behavior: smooth;
+}
+
+[id="podcast"],
+[id="ai-tooling"],
+[id="open-source"] {
+    scroll-margin-top: 20px;
+}
+
+.highlights-section {
+    padding: 40px 20px;
+    background: @background-alt;
 
     .section-container {
-        max-width: 800px;
+        max-width: 1200px;
         margin: 0 auto;
-        text-align: center;
     }
 
-    .podcast-card {
-        background: linear-gradient(135deg, @primary 0%, @primary-dark 100%);
-        color: @white;
-        padding: 40px;
+    .highlights-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .highlight-card {
+        .flex-display();
+        .flex-direction(column);
+        background: @white;
         border-radius: 12px;
+        border-top: 4px solid @accent;
+        padding: 24px;
+        color: @text-primary;
+        .transition(~'transform @{transition-speed-2} @{in-sine}, box-shadow @{transition-speed-2} @{in-sine}');
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 24px fade(@text-primary, 12%);
+            color: @text-primary;
+
+            .highlight-link {
+                color: @primary-dark;
+            }
+        }
+
+        .highlight-label {
+            .heading(11px);
+            color: @accent-dark;
+            letter-spacing: 0.08rem;
+            margin-bottom: 10px;
+        }
+
+        .highlight-metric {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.1;
+            color: @primary;
+            margin-bottom: 6px;
+        }
 
         h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin: 0 0 8px;
+            color: @text-primary;
         }
 
         p {
-            font-size: 1.1rem;
-            opacity: 0.95;
-            margin-bottom: 25px;
-            line-height: 1.6;
+            font-size: 0.92rem;
+            color: @text-secondary;
+            line-height: 1.5;
+            margin: 0 0 16px;
+            flex: 1;
         }
 
-        .podcast-links {
-            .flex-display();
-            .justify-content(center);
-            gap: 15px;
-
-            a {
-                display: inline-flex;
-                align-items: center;
-                gap: 8px;
-                background: rgba(255, 255, 255, 0.15);
-                color: @white;
-                padding: 12px 24px;
-                border-radius: 8px;
-                font-weight: 600;
-                .transition(~'background @{transition-speed-1} @{in-sine}');
-
-                &:hover {
-                    background: rgba(255, 255, 255, 0.25);
-                    color: @white;
-                }
-            }
+        .highlight-link {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: @primary;
         }
     }
 }
 
 @media (min-width: @wide-1-breakpoint) {
+    .highlights-section {
+        padding: 50px 40px;
+
+        .highlights-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+// Podcast Section
+
+.podcast-section {
+    padding: 60px 20px;
+    background: @white;
+
+    .section-container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .podcast-card {
+        .flex-display();
+        .flex-direction(column);
+        background: linear-gradient(135deg, @primary 0%, @primary-dark 100%);
+        color: @white;
+        padding: 32px;
+        border-radius: 12px;
+        gap: 28px;
+    }
+
+    .podcast-main {
+        flex: 1;
+    }
+
+    .podcast-lead {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        opacity: 0.95;
+        margin: 0 0 20px;
+    }
+
+    .podcast-points {
+        list-style: none;
+        margin: 0 0 26px;
+        padding: 0;
+
+        li {
+            position: relative;
+            padding-left: 26px;
+            margin-bottom: 12px;
+            font-size: 0.97rem;
+            line-height: 1.55;
+            opacity: 0.95;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0.55em;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: @accent;
+            }
+
+            strong {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .podcast-links {
+        .flex-display();
+        .flex-wrap(wrap);
+        gap: 12px;
+    }
+
+    .podcast-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.15);
+        color: @white;
+        padding: 12px 22px;
+        border-radius: 8px;
+        font-weight: 600;
+        .transition(~'background @{transition-speed-1} @{in-sine}');
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.28);
+            color: @white;
+        }
+
+        &.podcast-btn-primary {
+            background: @accent;
+            color: @text-primary;
+
+            &:hover {
+                background: @accent-light;
+                color: @text-primary;
+            }
+        }
+    }
+
+    .podcast-stats {
+        .flex-display();
+        .flex-wrap(wrap);
+        gap: 16px;
+        padding-top: 22px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .podcast-stat {
+        .flex-display();
+        .flex-direction(column);
+        min-width: 110px;
+
+        .podcast-stat-value {
+            font-size: 1.6rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: @accent-light;
+        }
+
+        .podcast-stat-label {
+            font-size: 0.82rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+            opacity: 0.85;
+        }
+    }
+}
+
+@media (min-width: @wide-2-breakpoint) {
     .podcast-section {
         padding: 80px 40px;
+
+        .podcast-card {
+            .flex-direction(row);
+            .align-items(stretch);
+            padding: 44px;
+            gap: 44px;
+        }
+
+        .podcast-stats {
+            .flex-direction(column);
+            .justify-content(center);
+            min-width: 190px;
+            padding-top: 0;
+            padding-left: 34px;
+            border-top: 0;
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+
+// AI Tooling Section
+
+.ai-tooling-section {
+    padding: 60px 20px;
+    background: @background;
+
+    .section-container {
+        max-width: 1200px;
+        min-width: 0;
+        margin: 0 auto;
+    }
+
+    .tool-card {
+        .flex-display();
+        .flex-direction(column);
+        background: @white;
+        border-radius: 12px;
+        border-left: 4px solid @accent;
+        padding: 28px;
+        margin-bottom: 26px;
+        gap: 26px;
+        // Without this the long command block forces the card - and the page -
+        // wider than a phone viewport.
+        min-width: 0;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .tool-intro {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .tool-heading {
+        .flex-display();
+        .align-items(center);
+        gap: 14px;
+        margin-bottom: 16px;
+
+        h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: @text-primary;
+            margin: 0;
+        }
+
+        .tool-kind {
+            font-size: 0.85rem;
+            color: @text-secondary;
+            margin: 2px 0 0;
+        }
+    }
+
+    .tool-icon {
+        .flex-display();
+        .align-items(center);
+        .justify-content(center);
+        flex: 0 0 auto;
+        width: 46px;
+        height: 46px;
+        border-radius: 10px;
+        background: fade(@primary, 10%);
+        color: @primary;
+        font-size: 1.4rem;
+    }
+
+    .tool-headline {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: @primary;
+        margin: 0 0 10px;
+        line-height: 1.4;
+    }
+
+    .tool-description {
+        font-size: 0.97rem;
+        color: @text-secondary;
+        line-height: 1.6;
+        margin: 0 0 18px;
+    }
+
+    .tool-command {
+        background: @text-primary;
+        color: @accent-light;
+        border-radius: 8px;
+        padding: 14px 16px;
+        margin: 0 0 18px;
+        max-width: 100%;
+        overflow-x: auto;
+        font-family: @monospace-font-stack;
+        font-size: 0.87rem;
+        line-height: 1.5;
+
+        code {
+            font-family: inherit;
+            white-space: pre;
+        }
+    }
+
+    .tool-tags {
+        .flex-display();
+        .flex-wrap(wrap);
+        gap: 8px;
+        margin-bottom: 20px;
+
+        span {
+            background: @background-alt;
+            color: @text-secondary;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+        }
+    }
+
+    .tool-cta {
+        display: inline-block;
+    }
+
+    .tool-points {
+        .flex-display();
+        .flex-direction(column);
+        flex: 1;
+        min-width: 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 16px;
+
+        li {
+            .flex-display();
+            .flex-direction(column);
+            background: @background-alt;
+            border-radius: 8px;
+            padding: 16px 18px;
+
+            strong {
+                font-size: 0.95rem;
+                font-weight: 700;
+                color: @text-primary;
+                margin-bottom: 5px;
+            }
+
+            span {
+                font-size: 0.9rem;
+                color: @text-secondary;
+                line-height: 1.55;
+            }
+        }
+    }
+}
+
+@media (min-width: @wide-3-breakpoint) {
+    .ai-tooling-section {
+        padding: 80px 40px;
+
+        .tool-card {
+            .flex-direction(row);
+            .align-items(flex-start);
+            padding: 40px;
+            gap: 44px;
+        }
+
+        .tool-intro {
+            flex: 1 1 52%;
+        }
+
+        .tool-points {
+            flex: 1 1 48%;
+        }
     }
 }
 

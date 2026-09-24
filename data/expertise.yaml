@@ -24,6 +24,18 @@
     - "DynamoDB"
     - "AppSync"
 
+- id: ai-tooling
+  title: "AI-Assisted Cloud Work"
+  icon: "ion-ios-lightbulb"
+  description: "Putting assistants to work on AWS without losing the guardrails"
+  technologies:
+    - "Agent-Ready CLIs"
+    - "AWSquery"
+    - "llms.txt"
+    - "Read-Only Guardrails"
+    - "Bedrock"
+    - "Workflow Automation"
+
 - id: security
   title: "Security & Compliance"
   icon: "ion-ios-locked"
