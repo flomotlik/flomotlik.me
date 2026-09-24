@@ -39,10 +39,13 @@ email        = "flo@flomotlik.me"
 linkedin     = "florianmotlik"
 social_banner = "img/headshot.jpg"
 
-# Podcast URLs
-podcast_spotify = "https://open.spotify.com/show/7rj9KZWKljrAheNNiNk83j"
-podcast_apple   = "https://podcasts.apple.com/at/podcast/aws-news-weekly/id1775481091"
-podcast_episodes = "28+"
+# AWS News Weekly podcast
+podcast_name     = "AWS News Weekly"
+podcast_spotify  = "https://open.spotify.com/show/7rj9KZWKljrAheNNiNk83j"
+podcast_apple    = "https://podcasts.apple.com/at/podcast/aws-news-weekly/id1775481091"
+podcast_rss      = "https://rss.libsyn.com/shows/597310/destinations/5245910.xml"
+podcast_episodes = "60+"
+podcast_since    = "October 2024"
 
 # Experience
 years_experience = "15+"

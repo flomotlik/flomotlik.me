@@ -1,25 +1,59 @@
-<section class="podcast-section">
+{{ $episodes := .Site.Params.podcast_episodes | default "60+" }}
+{{ $since := .Site.Params.podcast_since | default "October 2024" }}
+<section class="podcast-section" id="podcast">
     <div class="section-container">
+        <h2 class="section-title">{{ .Site.Params.podcast_name | default "AWS News Weekly" }}</h2>
+        <p class="section-subtitle">The week in AWS, in the time it takes to make coffee</p>
+
         <div class="podcast-card">
-            <h3>AWS News Weekly Podcast</h3>
-            <p>
-                Stay up-to-date with the latest AWS announcements and news.
-                Every week I break down what matters for developers and architects,
-                with {{ .Site.Params.podcast_episodes | default "28+" }} episodes and counting.
-            </p>
-            <div class="podcast-links">
-                {{ if .Site.Params.podcast_spotify }}
-                <a href="{{ .Site.Params.podcast_spotify }}" target="_blank" rel="noopener">
-                    <i class="icon ion-ios-play"></i>
-                    Spotify
-                </a>
-                {{ end }}
-                {{ if .Site.Params.podcast_apple }}
-                <a href="{{ .Site.Params.podcast_apple }}" target="_blank" rel="noopener">
-                    <i class="icon ion-ios-play"></i>
-                    Apple Podcasts
-                </a>
-                {{ end }}
+            <div class="podcast-main">
+                <p class="podcast-lead">
+                    AWS ships hundreds of announcements a month and almost none of them come with
+                    a note explaining whether they matter to you. Every Monday I read through all
+                    of them and record the ones that change how you build.
+                </p>
+
+                <ul class="podcast-points">
+                    <li><strong>What actually changed</strong> — new services, quota and pricing shifts, deprecations you need on your roadmap.</li>
+                    <li><strong>Why it matters</strong> — the practical read for developers and architects, not the press release.</li>
+                    <li><strong>Short and weekly</strong> — one episode, every week, no backlog to catch up on.</li>
+                </ul>
+
+                <div class="podcast-links">
+                    {{ with .Site.Params.podcast_spotify }}
+                    <a class="podcast-btn podcast-btn-primary" href="{{ . }}" target="_blank" rel="noopener">
+                        <i class="icon ion-ios-play"></i>
+                        Listen on Spotify
+                    </a>
+                    {{ end }}
+                    {{ with .Site.Params.podcast_apple }}
+                    <a class="podcast-btn" href="{{ . }}" target="_blank" rel="noopener">
+                        <i class="icon ion-ios-play"></i>
+                        Apple Podcasts
+                    </a>
+                    {{ end }}
+                    {{ with .Site.Params.podcast_rss }}
+                    <a class="podcast-btn" href="{{ . }}" target="_blank" rel="noopener">
+                        <i class="icon ion-social-rss"></i>
+                        RSS
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+
+            <div class="podcast-stats">
+                <div class="podcast-stat">
+                    <span class="podcast-stat-value">{{ $episodes }}</span>
+                    <span class="podcast-stat-label">Episodes</span>
+                </div>
+                <div class="podcast-stat">
+                    <span class="podcast-stat-value">Weekly</span>
+                    <span class="podcast-stat-label">Every Monday</span>
+                </div>
+                <div class="podcast-stat">
+                    <span class="podcast-stat-value">{{ $since }}</span>
+                    <span class="podcast-stat-label">Running since</span>
+                </div>
             </div>
         </div>
     </div>

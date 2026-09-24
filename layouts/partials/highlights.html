@@ -1,0 +1,29 @@
+<section class="highlights-section">
+    <div class="section-container">
+        <div class="highlights-grid">
+            <a class="highlight-card" href="#podcast">
+                <span class="highlight-label">Podcast</span>
+                <span class="highlight-metric">{{ .Site.Params.podcast_episodes | default "60+" }}</span>
+                <h3>AWS News Weekly</h3>
+                <p>Every AWS announcement that matters, summarised weekly since {{ .Site.Params.podcast_since | default "October 2024" }}.</p>
+                <span class="highlight-link">Listen to an episode</span>
+            </a>
+
+            <a class="highlight-card" href="#ai-tooling">
+                <span class="highlight-label">Open Source</span>
+                <span class="highlight-metric">AWSquery</span>
+                <h3>An AWS CLI agents can use</h3>
+                <p>Ask AWS a question, get a table back. Self-documenting, read-only, and token-efficient enough to hand to an assistant.</p>
+                <span class="highlight-link">See what it does</span>
+            </a>
+
+            <a class="highlight-card" href="#ai-tooling">
+                <span class="highlight-label">Guide</span>
+                <span class="highlight-metric">llms.txt</span>
+                <h3>AI build guide</h3>
+                <p>How to get an AI assistant to build a working tool for someone with a browser and nothing else.</p>
+                <span class="highlight-link">Read the guide</span>
+            </a>
+        </div>
+    </div>
+</section>
