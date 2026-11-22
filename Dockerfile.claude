@@ -1,5 +1,5 @@
 # Dockerfile.claude - Claude Flow development container for Hugo static site
-# Extends claude-flow:latest with Hugo, Node.js/Less, and GitHub Pages deployment tools
+# Extends ghcr.io/flomotlik/claude-code:latest with Hugo, Node.js/Less, and GitHub Pages deployment tools
 #
 # Build: docker build -f Dockerfile.claude -t flomotlik-website .
 # Run:   claude-flow-local  (or: clocal)
@@ -10,7 +10,7 @@
 #   make build  - Build the Hugo site (runs clean + css + hugo)
 #   hugo server - Run development server on port 1313
 
-FROM claude-flow:latest
+FROM ghcr.io/flomotlik/claude-code:latest
 
 # Install Hugo (latest v0.152.2) - detect architecture for correct binary
 RUN apt-get update && apt-get install -y --no-install-recommends \
