@@ -1208,6 +1208,30 @@ html {
         }
     }
 
+    .section-title a {
+        color: inherit;
+
+        &:hover {
+            color: @primary;
+        }
+    }
+
+    .podcast-site {
+        margin: 0 0 20px;
+        font-size: 1rem;
+        line-height: 1.55;
+
+        a {
+            color: @accent-light;
+            font-weight: 700;
+            text-decoration: underline;
+
+            &:hover {
+                color: @white;
+            }
+        }
+    }
+
     .podcast-links {
         .flex-display();
         .flex-wrap(wrap);

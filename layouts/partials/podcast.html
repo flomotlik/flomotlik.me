@@ -1,8 +1,8 @@
-{{ $episodes := .Site.Params.podcast_episodes | default "60+" }}
+{{ $site := .Site.Params.podcast_site | default "https://awsnewsweekly.com" }}
 {{ $since := .Site.Params.podcast_since | default "October 2024" }}
 <section class="podcast-section" id="podcast">
     <div class="section-container">
-        <h2 class="section-title">{{ .Site.Params.podcast_name | default "AWS News Weekly" }}</h2>
+        <h2 class="section-title"><a href="{{ $site }}" target="_blank" rel="noopener">{{ .Site.Params.podcast_name | default "AWS News Weekly" }}</a></h2>
         <p class="section-subtitle">The week in AWS, in the time it takes to make coffee</p>
 
         <div class="podcast-card">
@@ -20,9 +20,18 @@
                     <li><strong>Built on the stack it covers</strong> — Lambda collects the feeds, Bedrock writes the summary, and the pipeline ships an episode every week without anyone touching it.</li>
                 </ul>
 
+                <p class="podcast-site">
+                    Show notes with links to every AWS announcement:
+                    <a href="{{ $site }}" target="_blank" rel="noopener">{{ replace $site "https://" "" }}</a>
+                </p>
+
                 <div class="podcast-links">
+                    <a class="podcast-btn podcast-btn-primary" href="{{ $site }}" target="_blank" rel="noopener">
+                        <i class="icon ion-ios-list"></i>
+                        Show notes &amp; episodes
+                    </a>
                     {{ with .Site.Params.podcast_spotify }}
-                    <a class="podcast-btn podcast-btn-primary" href="{{ . }}" target="_blank" rel="noopener">
+                    <a class="podcast-btn" href="{{ . }}" target="_blank" rel="noopener">
                         <i class="icon ion-ios-play"></i>
                         Listen on Spotify
                     </a>
@@ -47,10 +56,6 @@
             </div>
 
             <div class="podcast-stats">
-                <div class="podcast-stat">
-                    <span class="podcast-stat-value">{{ $episodes }}</span>
-                    <span class="podcast-stat-label">Episodes</span>
-                </div>
                 <div class="podcast-stat">
                     <span class="podcast-stat-value">Weekly</span>
                     <span class="podcast-stat-label">Every Monday</span>
